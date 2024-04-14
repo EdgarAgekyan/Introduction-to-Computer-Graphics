@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Draw a blue rectangle (canvas version)</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="cnv1" width="400" height="400">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <script src="asg0.js"></script>
+        <script src="lib/cuon-matrix-cse160.js"></script>
+
+        <br><br>
+
+        <label>v1:</label>
+
+        <label for="xlabel">x</label>
+
+        <input type="text" id="xlabel" name="name" required minlength="4" maxlength="8" size="10" />
+
+        <label for="ylabel">y</label>
+
+        <input type="text" id="ylabel" name="name" required minlength="4" maxlength="8" size="10" />
+
+        <br><br>
+
+        <label>v2:</label>
+
+        <label for="x2label">x</label>
+
+        <input type="text" id="x2label" name="name" required minlength="4" maxlength="8" size="10" />
+
+        <label for="y2label">y</label>
+
+        <input type="text" id="y2label" name="name" required minlength="4" maxlength="8" size="10" />
+
+        <br><br>
+
+        <input type="button" value="Draw" onclick="handleDrawEvent()"input>
+
+         
+        <br><br>
+        
+        <label for="operation-select">Operation:</label>
+        <select name="operation" id="operation-select">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="mul">Multiply</option>
+            <option value="div">Divide</option>
+            <option value="ang">Angle Between</option>
+            <option value="are">Area</option>
+            <option value="mag">Magnitude</option>
+            <option value="nor">Normalize</option>
+        </select>
+
+
+        <label for="scalarLabel">Scalar:</label>
+        <input type="text" id="scalarLabel" name="name" required minlength="4" maxlength="8" size="10" />
+
+        <br><br>
+
+        <input type="button" value="Draw" onclick="handleDrawOperationEvent()"input>
+
+
+        <!-- <label for="pet-select">Choose a pet:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+
+        </select> -->
+
+        <!-- <input type="button" value="Click me!" onclick="handleDrawEvent()"></html>input> -->
+        
+    </body>
+
+</html>
